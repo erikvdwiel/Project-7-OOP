@@ -7,8 +7,8 @@ class house {
    private $height;
    private $depth;
    private $volume;
-   private $price;
-   private $pricePerCubi = 800;
+   public $price;
+   public $pricePerCubi = 800;
    
    public function __construct($floor, $rooms, $width, $height, $depth)
    {

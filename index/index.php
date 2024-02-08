@@ -1,5 +1,5 @@
 <?php 
-
+// gemaakt door Erik van der Wiel
 class house {
    private $floor;
    private $rooms;
