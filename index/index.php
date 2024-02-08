@@ -1,12 +1,12 @@
 <?php 
 
 class house {
-   public $floor;
-   public $rooms;
-   public $width;
-   public $height;
-   public $depth;
-   public $volume;
+   private $floor;
+   private $rooms;
+   private $width;
+   private $height;
+   private $depth;
+   private $volume;
    public $price;
    public $pricePerCubi = 800;
    
