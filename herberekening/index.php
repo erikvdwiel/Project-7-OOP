@@ -1,14 +1,31 @@
-<?php 
+<?php
 
-    // Auteur: Van der Wiel
+ require_once("Rooms.php");
 
+ require_once("house.php");
 
-require_once "house.php";
-require_once "room.php";
+// Maak een huis aan
+$house = new House();
 
+// Voeg kamers toe aan het huis
+$room1 = new Room(5.2, 5.1, 5.5);
+$room2 = new Room(4.8, 4.6, 4.9);
+$room3 = new Room(5.9, 2.5, 3.1);
 
-$house = new house(2, 4, 15, 15, 20);
+$house->addRoom($room1);
+$house->addRoom($room2);
+$house->addRoom($room3);
 
-$room1 = new room(2, 4, 15, 15, 20);
-$room2 = new room(3, 5, 15, 15, 15);
-$room3 = new room(2, 3, 15, 15, 12);    
+// Bereken en toon de resultaten
+echo "Inhoud Kamers:\n" . "<br>". "<br>";
+
+foreach ($house->getRooms() as $index => $room) {
+
+echo "Lengte: " . $room->getLength() . "m Breedte: " . $room->getWidth() . "m Hoogte: " . $room->getHeight() . "m " . "<br>";
+
+}
+echo "<br>";
+echo "Volume Totaal = " . $house->getTotalVolume() . "m³\n";
+echo "<br>";
+echo "Prijs van het huis is= €" . number_format($house->calculatePrice(), 2);
+?>
