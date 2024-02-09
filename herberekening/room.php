@@ -1,6 +1,6 @@
 <?php 
 
-class house {
+class room {
    private $floor;
    private $rooms;
    private $width;
@@ -63,13 +63,13 @@ class house {
 }   
     
 
-$house1 = new house(2, 4, 15, 15, 20);
-$house2 = new house(3, 5, 15, 15, 15);
-$house3 = new house(2, 3, 15, 15, 12);
+$room1 = new room(2, 4, 15, 15, 20);
+$room2 = new room(3, 5, 15, 15, 15);
+$room3 = new room(2, 3, 15, 15, 12);
 
 
 echo 'Inhoud Kamers:' . '<br><br>';
 
-echo $house1->getLength() . $house1->getWidth() . $house1->getHeight() . '<br>';
-echo $house2->getLength() . $house2->getWidth() . $house2->getHeight() . '<br>';
-echo $house3->getLength() . $house3->getWidth() . $house3->getHeight();
+echo $room1->getLength() . $room1->getWidth() . $room1->getHeight() . '<br>';
+echo $room2->getLength() . $room2->getWidth() . $room2->getHeight() . '<br>';
+echo $room3->getLength() . $room3->getWidth() . $room3->getHeight();
