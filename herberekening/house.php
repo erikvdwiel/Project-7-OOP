@@ -3,7 +3,7 @@
 class House {
 private $rooms = [];
 
-public function addRoom(Room $room) {
+public function addRoom($room) {
 $this->rooms[] = $room;
 }
 
