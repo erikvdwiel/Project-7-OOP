@@ -47,4 +47,4 @@ $Figures = new Figures();
 foreach ($Figures->shapeList as $shape) {
     echo $shape->draw() . PHP_EOL;
 }
-?>
+
