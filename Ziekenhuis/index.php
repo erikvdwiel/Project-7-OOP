@@ -1,6 +1,6 @@
 <?php
 // auteur Van der Wiel
-
+namespace Ziekenhuis\classes;
 abstract class Person {
     private $name;
     private $eyeColor;
